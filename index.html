@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{display:none;}
+        .box{color: white;
+        font-size: 30px;}
+    @media (max-width:500px){
+        #box_1{
+            margin: 20px;
+            background-image: url(./1.jpg);
+           display: block;
+           background-size: cover;
+    height: 100vh;
+        }
+    } @media (max-width:800px) and (min-width:500px) {
+        #box_2{
+            margin: 20px;
+            background-image: url(./3.jpeg);
+           display: block;
+
+           background-size: cover;
+    height: 100vh;
+        }
+    } @media (max-width:1000px) and (min-width:800px) {
+        #box_3{
+            margin: 20px;
+            background-image: url(./mm.jpeg);
+           display: block;
+           background-size: cover;
+    height: 100vh;
+        }
+    } @media (max-width:1500px) and (min-width:1000px) {
+        #box_4{
+            margin: 20px;
+            background-image: url(./ravan1.jpeg);
+           display: block;
+           background-size: cover;
+    height: 100vh;
+        }
+    } 
+    </style>
+</head>
+<body>
+    <div class="box" id="box_1">This is less than 500px</div>
+    <div class="box" id="box_2">This is less than 800px</div>
+    <div class="box" id="box_3">This is less than 1000px</div>
+    <div class="box" id="box_4">This is less than 1500px</div>
+</body>
+</html>
